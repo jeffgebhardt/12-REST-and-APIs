@@ -14,6 +14,7 @@
       headers: {'Authorization': 'token ' + myToken},
       success: function(data, message, xhr) {
         console.log(data);
+        repos.all = data;
       }
     });
   };
